@@ -1,6 +1,6 @@
 # React Native Chatbot
 
-<a href="https://travis-ci.org/LucasBassetti/react-native-chatbot"><img src="https://travis-ci.org/LucasBassetti/react-native-chatbot.svg?branch=master" alt="Travis CI" /></a> <a href="https://badge.fury.io/js/react-native-chatbot"><img src="https://badge.fury.io/js/react-native-chatbot.svg" alt="npm version">
+<a href="https://travis-ci.org/LucasBassetti/react-native-chatbot"><img src="https://travis-ci.org/LucasBassetti/react-native-chatbot.svg?branch=master" alt="Travis CI" /></a> <a href="https://badge.fury.io/js/react-native-chatbot"><img src="https://badge.fury.io/js/react-native-chatbot.svg" alt="npm version"></a>
 
 A react native chatbot component to create conversation chats. Based on [react-simple-chatbot](https://github.com/LucasBassetti/react-simple-chatbot).
 
