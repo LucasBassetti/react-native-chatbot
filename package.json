@@ -1,12 +1,10 @@
 {
   "name": "react-native-chatbot",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.03",
   "description": "React Native Chatbot",
-  "main": "dist/react-native-chatbot.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint lib/*.jsx",
-    "prepublish": "npm run build",
-    "prepush": "npm run lint && npm run test:coverage",
     "start": "webpack-dev-server --inline --content-base build/",
     "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "test": "./node_modules/.bin/mocha --require react-native-mock/mock.js --compilers js:babel-core/register --recursive tests/**/*.spec.js",
@@ -15,7 +13,7 @@
     "build": "webpack --config webpack.config.prod.js"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "nyc": {
     "function": 80,
@@ -69,7 +67,6 @@
     "nyc": "^10.2.0",
     "react-addons-test-utils": "^15.5.0",
     "react-native-mock": "^0.3.1",
-    "sinon": "^2.1.0",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",
     "write-file-webpack-plugin": "^4.0.0"
