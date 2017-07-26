@@ -1,6 +1,6 @@
 {
   "name": "react-native-chatbot",
-  "version": "0.0.1-alpha.03",
+  "version": "0.0.1-alpha.05",
   "description": "React Native Chatbot",
   "main": "lib/index.js",
   "scripts": {
@@ -16,9 +16,6 @@
     "lib"
   ],
   "nyc": {
-    "function": 80,
-    "lines": 80,
-    "check-coverage": true,
     "reporter": [
       "text",
       "html"
@@ -73,11 +70,13 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "prop-types": "^15.5.8",
+    "prop-types": "^15.5.10",
     "random-id": "0.0.2",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-native": "0.45.0",
-    "styled-components": "^1.4.6"
+    "react-native-loader": "^1.1.0"
+  },
+  "peerDependencies": {
+    "react": ">= 0.14.0 < 17.0.0-0",
+    "react-native": ">= 0.45.0",
+    "styled-components": ">= 2.0.0"
   }
 }
