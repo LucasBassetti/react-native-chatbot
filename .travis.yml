@@ -1,6 +1,7 @@
 language: node_js
-
 node_js:
-  - 7
   - 6
-  - 5
+  - 7
+  - 8
+before_install:
+  - "npm install styled-components@2.1.1 react@16.0.0-alpha.12 react-native@0.46.4"
