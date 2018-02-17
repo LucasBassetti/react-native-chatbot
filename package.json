@@ -1,6 +1,6 @@
 {
   "name": "react-native-chatbot",
-  "version": "0.0.1-alpha.08",
+  "version": "0.0.1-alpha.09",
   "description": "React Native Chatbot",
   "main": "lib/index.js",
   "scripts": {
