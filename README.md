@@ -38,6 +38,7 @@ const steps = [
 | Name | Type | Default | Description |
 |---|---|---|---|
 | `avatarStyle` | `PropTypes.object` | | The style object to use to override the avatar element |
+| `avatarWrapperStyle` | `PropTypes.object` | | The style object to use to override the avatar sorrounding element |
 | `botAvatar` | `PropTypes.string` | `img` | Bot image source |
 | `botBubbleColor` | `PropTypes.string` | `#6E48AA` | Bot bubble color |
 | `botDelay` | `PropTypes.number` | `1000` | The delay time of bot messages |
