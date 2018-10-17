@@ -113,7 +113,7 @@ Example:
 | Name | Type | Required | Description |
 |---|---|---|---|
 | `id` | `String / Number` | `true` | The step id. Required for any step |
-| `options` | `Array` | `true` | Array of options with { label, value, trigger } properties |
+| `options` | `Array / Function` | `true` | Array of options with { label, value, trigger } properties. If function, it will receive ({ value, steps }) params  |
 | `end` | `Boolean` | `false` | if true indicate that this step is the last |
 
 Example:
