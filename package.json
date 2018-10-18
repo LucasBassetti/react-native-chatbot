@@ -64,6 +64,7 @@
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "random-id": "0.0.2",
+    "react-native-keyboard-aware-scroll-view": "^0.7.3",
     "react-native-loader": "^1.1.0"
   },
   "peerDependencies": {
