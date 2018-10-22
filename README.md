@@ -67,7 +67,7 @@ const steps = [
 | Name | Type | Required | Description |
 |---|---|---|---|
 | `id` | `String / Number` | `true` | The step id. Required for any step |
-| `message` | `String / Function` | `true` | The text message. If function, it will receive ({ previousValue, steps }) params |
+| `message` | `String / Function` | `true` | The text message. If function, it will receive ({ previousValue, steps }) params. If the function returns a promise. The delay are ignored and the message is shown on resolve |
 | `trigger` | `String / Number / Function` | `false` | The id of next step to be triggered. If function, it will receive ({ value, steps }) params |
 | `avatar` | `String` | `false` | the avatar to be showed just in this step. Note: this step must be a step that avatar appears |
 | `delay` | `Number` | `false` | set the delay time to message be shown |
