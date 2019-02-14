@@ -60,6 +60,7 @@ const steps = [
 | `userBubbleColor` | `PropTypes.string`  | `#fff` | User bubble color |
 | `userDelay` | `PropTypes.number`  | `1000` | The delay time of user messages |
 | `userFontColor` | `PropTypes.string`  | `#4a4a4a` | User font color |
+| `scrollViewProps` | `PropTypes.object`  | `#4a4a4a` | Use to override scroll view props |
 
 ### Steps
 
