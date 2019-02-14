@@ -50,8 +50,10 @@ const steps = [
 | `customStyle` | `PropTypes.object	` | | The style object to use to override the custom step element |
 | `footerStyle` | `PropTypes.object`  | | The style object to use to override the footer element |
 | `handleEnd({ renderedSteps, steps, values })` | `PropTypes.func`  | | The callback function when chat ends |
+| `HeaderComponent` | `oneOfType([element, node, func])` | | Header component for the chatbot |
 | `hideUserAvatar` | `PropTypes.bool`  | `false` | If true the user avatar will be hidden in all steps |
 | `inputStyle` | `PropTypes.object`  | | The style object to use to override the input element |
+| `keyboardVerticalOffset` | `PropTypes.number` | `ios ? 44 : 0` | Vertical offset of keyboard view. Check [keyboardVerticalOffset](https://facebook.github.io/react-native/docs/keyboardavoidingview#keyboardverticaloffset)
 | `placeholder` | `PropTypes.string`  | `Type the message ...` | Chatbot input placeholder |
 | `steps` | `PropTypes.array`  | | The chatbot steps to display |
 | `style` | `PropTypes.object`  | | The style object to use to override the submit button element |
@@ -74,6 +76,8 @@ const steps = [
 | `avatar` | `String` | `false` | the avatar to be showed just in this step. Note: this step must be a step that avatar appears |
 | `delay` | `Number` | `false` | set the delay time to message be shown |
 | `end` | `Boolean` | `false` | if true indicate that this step is the last |
+| `inputAttributes` | `Object` | Set any attributes on the input field (keyboardType, autoCapitalize, autoComplete) |
+| `metadata` | `Object` | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format |
 
 Example:
 
@@ -99,6 +103,8 @@ Example:
 | `trigger` | `String / Number / Function` | `false` | The id of next step to be triggered. If function, it will receive ({ value, steps }) params |
 | `validator` | `String / Number` | `false` | if user attribute is true you can pass a validator function to validate the text typed by the user |
 | `end` | `Boolean` | `false` | if true indicate that this step is the last |
+| `inputAttributes` | `Object` | Set any attributes on the input field (keyboardType, autoCapitalize, autoComplete) |
+| `metadata` | `Object` | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format |
 
 Example:
 
@@ -106,6 +112,9 @@ Example:
 {
   id: '1',
   user: true,
+  inputAttributes: {
+    keyboardType: 'email-address'
+  },
   end: true,
 }
 ```
@@ -117,6 +126,8 @@ Example:
 | `id` | `String / Number` | `true` | The step id. Required for any step |
 | `options` | `Array` | `true` | Array of options with { label, value, trigger } properties |
 | `end` | `Boolean` | `false` | if true indicate that this step is the last |
+| `inputAttributes` | `Object` | Set any attributes on the input field (keyboardType, autoCapitalize, autoComplete) |
+| `metadata` | `Object` | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format |
 
 Example:
 
@@ -143,6 +154,8 @@ Example:
 | `trigger` | `String / Number / Function` | `false` | The id of next step to be triggered. If function, it will receive ({ value, steps }) params |
 | `delay` | `Number` | `false` | set the delay time to component be shown |
 | `end` | `Boolean` | `false` | if true indicate that this step is the last |
+| `inputAttributes` | `Object` | Set any attributes on the input field (keyboardType, autoCapitalize, autoComplete) |
+| `metadata` | `Object` | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format |
 
 Example:
 
@@ -161,6 +174,8 @@ Example:
 | `id` | `String / Number` | `true` | The step id. Required for any step |
 | `update` | `String / Number` | `true` | The id of next step to be updated |
 | `trigger` | `String / Number / Function` | `false` | The id of next step to be triggered. If function, it will receive ({ value, steps }) params |
+| `inputAttributes` | `Object` | Set any attributes on the input field (keyboardType, autoCapitalize, autoComplete) |
+| `metadata` | `Object` | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format |
 
 Example:
 
@@ -185,6 +200,8 @@ When you declare a custom step, you need indicate a custom React Component to be
 | `step` | `PropTypes.object` | Current step rendered |
 | `steps` | `PropTypes.object` | All steps rendered |
 | `triggerNextStep({ value, trigger })` | `PropTypes.func` | Callback function to trigger next step when user attribute is true. Optionally you can pass a object with value to be setted in the step and the next step to be triggered |
+| `inputAttributes` | `Object` | Set any attributes on the input field (keyboardType, autoCapitalize, autoComplete) |
+| `metadata` | `Object` | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format |
 
 ## How to Contribute
 
