@@ -38,6 +38,7 @@ const steps = [
 | Name | Type | Default | Description |
 |---|---|---|---|
 | `avatarStyle` | `PropTypes.object` | | The style object to use to override the avatar element |
+| `avatarWrapperStyle` | `PropTypes.object` | | The style object to use to override the avatar surrounding element |
 | `botAvatar` | `PropTypes.string` | `img` | Bot image source |
 | `botBubbleColor` | `PropTypes.string` | `#6E48AA` | Bot bubble color |
 | `botDelay` | `PropTypes.number` | `1000` | The delay time of bot messages |
@@ -59,6 +60,7 @@ const steps = [
 | `userBubbleColor` | `PropTypes.string`  | `#fff` | User bubble color |
 | `userDelay` | `PropTypes.number`  | `1000` | The delay time of user messages |
 | `userFontColor` | `PropTypes.string`  | `#4a4a4a` | User font color |
+| `scrollViewProps` | `PropTypes.object`  | `#4a4a4a` | Use to override scroll view props |
 
 ### Steps
 
