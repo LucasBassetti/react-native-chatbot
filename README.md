@@ -58,6 +58,7 @@ const steps = [
 | `steps` | `PropTypes.array`  | | The chatbot steps to display |
 | `style` | `PropTypes.object`  | | The style object to use to override the submit button element |
 | `submitButtonStyle` | `PropTypes.object`  | | The style object to use to override the button element |
+| `submitButtonContent` | `PropTypes.string` or `PropTypes.element` | `SEND`| The string or object to use to override the button content |
 | `userAvatar` | `PropTypes.string`  | `img` | User image source |
 | `userBubbleColor` | `PropTypes.string`  | `#fff` | User bubble color |
 | `userDelay` | `PropTypes.number`  | `1000` | The delay time of user messages |
