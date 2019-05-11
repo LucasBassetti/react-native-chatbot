@@ -44,6 +44,10 @@ const steps = [
 | `botDelay` | `PropTypes.number` | `1000` | The delay time of bot messages |
 | `botFontColor` | `PropTypes.string` | `#fff` | Bot font color |
 | `bubbleStyle` | `PropTypes.object` | | The style object to use to override the bubble element |
+| `optionStyle` | `PropTypes.object` | | The style object to use to override the option container |
+| `optionElementStyle` | `PropTypes.object` | | The style object to use to override the option element |
+| `optionFontColor` | `PropTypes.string` | | Option font color |
+| `optionBubbleColor` | `PropTypes.string` | | Option bubble color |
 | `className` | `PropTypes.string` | | Add a class name to root element |
 | `contentStyle` | `PropTypes.object` | | The style object to use to override the scroll element |
 | `customDelay` | `PropTypes.number` | `1000` | The delay time of custom messages |
@@ -60,6 +64,7 @@ const steps = [
 | `submitButtonStyle` | `PropTypes.object`  | | The style object to use to override the button element |
 | `submitButtonContent` | `PropTypes.string` or `PropTypes.element` | `SEND`| The string or object to use to override the button content |
 | `userAvatar` | `PropTypes.string`  | `img` | User image source |
+| `userBubbleStyle` | `PropTypes.string`  | `img` | The style object to use to override the user's bubble element |
 | `userBubbleColor` | `PropTypes.string`  | `#fff` | User bubble color |
 | `userDelay` | `PropTypes.number`  | `1000` | The delay time of user messages |
 | `userFontColor` | `PropTypes.string`  | `#4a4a4a` | User font color |
