@@ -55,6 +55,7 @@ const steps = [
 | `footerStyle` | `PropTypes.object`  | | The style object to use to override the footer element |
 | `handleEnd({ renderedSteps, steps, values })` | `PropTypes.func`  | | The callback function when chat ends |
 | `headerComponent` | `PropTypes.element` | | Header component for the chatbot |
+| `hideBotAvatar` | `PropTypes.bool`  | `false` | If true the bot avatar will be hidden in all steps |
 | `hideUserAvatar` | `PropTypes.bool`  | `false` | If true the user avatar will be hidden in all steps |
 | `inputStyle` | `PropTypes.object`  | | The style object to use to override the input element |
 | `keyboardVerticalOffset` | `PropTypes.number` | `ios ? 44 : 0` | Vertical offset of keyboard view. Check [keyboardVerticalOffset](https://facebook.github.io/react-native/docs/keyboardavoidingview#keyboardverticaloffset)
