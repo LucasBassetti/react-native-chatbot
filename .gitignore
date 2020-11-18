@@ -21,6 +21,8 @@ pids
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 /build
+/dist
+index.d.ts
 
 # Others
 .nyc_output

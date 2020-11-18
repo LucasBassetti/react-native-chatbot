@@ -1,0 +1,33 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "@react-native-community",
+    "plugin:@typescript-eslint/recommended",
+    "universe/native",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/ban-types": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/array-type": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/no-inferrable-types": 0,
+    "react/no-did-update-set-state": 0,
+    "import/order": 0,
+    "no-useless-return": 0,
+    "prefer-promise-reject-errors": 0,
+    "no-multi-assign": 0,
+    "no-useless-escape": 0,
+    "react-native/no-inline-styles": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "react-hooks/rules-of-hooks": 0,
+    "no-bitwise": 0,
+    "eslint-comments/no-unused-disable": 0,
+    "eslint-comments/no-unlimited-disable": 0,
+    "no-return-await": "error"
+  }
+}
